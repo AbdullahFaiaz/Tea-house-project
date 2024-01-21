@@ -9,8 +9,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/5a6b83bd11.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>    
+    <!-- font-manrope -->
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
 </head>
-<body>
+
+
+
+<body class="font-manrope border-blue-500 border-4">
+    <header class="container mx-auto border-red-500 border-4">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div>
+            <img src="images/banner.png" class="max-w-sm" alt="image"/>
+            <!-- badge -->
+            <div class="-mt-[70px] flex items-center space-x-3 bg-white drop-shadow-lg w-fit px-2 py-1 rounded-lg">
+              <i class="fa-solid fa-star text-[#FFDC64] text-3xl"></i>
+              <div class="">
+              <h3 class="text-3xl font-extrabold inline">5.00</h3>
+              <p class="text-[#777]">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-[80px] text-black font-extrabold">It's good 
+              <br>tea time at The <br>Tea House</h1>
+            <p class="py-6 text-[#777777] font-medium text-lg">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="btn btn-secondary bg-gradient-to-r from-[#FF8938] to-[#F00] border-none">Explore More</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+    </main>
     
+    <footer>
+
+    </footer>
 </body>
 </html>
